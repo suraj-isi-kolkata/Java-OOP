@@ -1,0 +1,136 @@
+
+-----First assignment----
+
+
+class SuperDepartment {
+    public static String departmentName() {
+        return "Super Department";
+    }
+
+    public static String getTodaysWork() {
+        return "No Work as of now";
+    }
+
+    public static String getWorkDeadline() {
+        return "Nil";
+    }
+
+    public static String isTodayAHoliday() {
+        return "Today is not a holiday";
+    }
+}
+    class AdminDepartment extends SuperDepartment{
+        public static String departmentName() {
+            return "Admin Department";
+        }
+
+        public static String getTodaysWork() {
+            return "Complete your document submission";
+        }
+
+        public static String getWorkDeadline() {
+            return "Complete by EOD";
+        }
+    }
+
+public class Test {
+  public static void main(String[] args) {
+      AdminDepartment b = new AdminDepartment();
+      System.out.println(b.getWorkDeadline());
+   }
+ }
+
+
+
+----
+class SuperDepartment {
+    public static String departmentName() {
+        return "Super Department";
+    }
+
+    public static String getTodaysWork() {
+        return "No Work as of now";
+    }
+
+    public static String getWorkDeadline() {
+        return "Nil";
+    }
+
+    public static String isTodayAHoliday() {
+        return "Today is not a holiday";
+    }
+}
+    class AdminDepartment extends SuperDepartment{
+        public static String departmentName() {
+            return "Admin Department";
+        }
+
+        public static String getTodaysWork() {
+            return "Complete your document submission";
+        }
+
+        public static String getWorkDeadline() {
+            return "Complete by EOD";
+        }
+    }
+class HRdepartment extends SuperDepartment{
+    public static String departmentName() {
+        return "Hr Department";
+    }
+
+    public static String getTodaysWork() {
+        return "Fill today's worksheet and mark your attendance ";
+    }
+
+    public static String getWorkDeadline() {
+        return "Complete by EOD";
+    }
+
+    public static String doActivity() {
+        return "team Lunch";
+    }
+}
+class TechDepartment extends SuperDepartment{
+    public static String departmentName() {
+        return "Tech Department";
+    }
+
+    public static String getTodaysWork() {
+        return "Complete coding of module 1";
+    }
+
+    public static String getWorkDeadline() {
+        return "Complete by EOD";
+    }
+
+    public static String getTechStackInformation() {
+        return "Core Java";
+    }
+}
+
+
+public class Test {
+  public static void main(String[] args) {
+
+      AdminDepartment b = new AdminDepartment();
+      HRdepartment c = new HRdepartment();
+      TechDepartment d = new TechDepartment();
+      System.out.println("Welcome to " + b.departmentName());
+      System.out.println(b.getTodaysWork());
+      System.out.println(b.getWorkDeadline());
+      System.out.println(b.isTodayAHoliday());
+      System.out.println(" ");
+      System.out.println("Welcome to " + c.departmentName());
+      System.out.println(c.doActivity());
+      System.out.println(c.getTodaysWork());
+      System.out.println(c.getWorkDeadline());
+      System.out.println(c.isTodayAHoliday());
+      System.out.println(" ");
+      System.out.println("Welcome to " + d.departmentName());
+      System.out.println(d.getTodaysWork());
+      System.out.println(d.getWorkDeadline());
+      System.out.println(d.getTechStackInformation());
+      System.out.println(d.isTodayAHoliday());
+   }
+ }
+
